@@ -4,7 +4,7 @@ FROM debian:buster-slim
 ENV PATH="/mattermost/bin:${PATH}"
 ARG PUID=2000
 ARG PGID=2000
-ARG MM_PACKAGE="https://github.com/bettermost/mattermost-server/releases/download/v5.23.1-rc12/bettermost-oss-linux-amd64.tar.gz"
+ARG MM_PACKAGE="https://github.com/bettermost/mattermost-server/releases/download/v5.23.1-rc16/bettermost-oss-linux-amd64.tar.gz"
 
 COPY entrypoint.sh /home/mattermost/
 RUN chmod +x /home/mattermost/entrypoint.sh
